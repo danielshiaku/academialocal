@@ -28,12 +28,18 @@ h1,h2,h3{
   }
 }
 
+.wrap{
+  margin: 0 auto;
+  padding: 40px;
+}
+
 body {
   /* 4. Increase line-height */
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: 'Cabin Variable', sans-serif;
+  background-color: var(--bg);
 
 }
 
@@ -51,6 +57,7 @@ input, button, textarea, select {
 /* 8. Avoid text overflows */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+  color: var(--white);
 }
 
 /* 9. Improve line wrapping */
@@ -59,6 +66,7 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+  color: var(--white);
 }
 
 /*
