@@ -1,15 +1,14 @@
 <script>
     import ImgHome from '$lib/assets/musculacao.jpg'
-    console.log(ImgHome)
 </script>
 
 
 <section class="intro" style="background-image: url({ImgHome});">
 
 <div class="intro__wrapper wrap">
-    <h1>Você está pronto para o desafio? 💪</h1>
+    <h1>Você está pronto para o desafio? </h1>
     <p> Academia Local está pronta para te ajudar a chegar mais longe e alcançar sua melhor performance.</p>
-    <a href="">Modalidades</a>
+    <a href="" class="btn">Modalidades</a>
 </div>
     
 </section>
@@ -35,5 +34,15 @@
 
     .intro__wrapper{
         z-index: 1;
+        max-width: 450px;
+        line-height: 1.2;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 36px;
     }
 </style>

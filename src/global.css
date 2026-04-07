@@ -2,13 +2,13 @@
     --bg: #121212;
     --feat: #FF3E00;
     --white: #FFFFFF;
+    --black: #121212;
 }
 
 
 h1,h2,h3{
   font-family: 'Roboto Condensed Variable', sans-serif;
   color: var(--feat);
-
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -31,6 +31,26 @@ h1,h2,h3{
 .wrap{
   margin: 0 auto;
   padding: 40px;
+}
+
+.btn{
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: 250ms;
+  margin-top: 24px;
+}
+
+.btn:hover{
+  color: var(--black);
+  background-color: var(--white);
+  transition: 125ms;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  color: var(--white);
 }
 
 body {
