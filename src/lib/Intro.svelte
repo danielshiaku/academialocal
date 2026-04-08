@@ -1,16 +1,24 @@
 <script>
     import musculacao from '$lib/assets/musculacao.jpg';
     import EmojiMusc from '$lib/assets/icon-muscle.png';
+    import grupo from '$lib/assets/exercicios-grupo.jpg';
+    import peso from '$lib/assets/icon-weight.png'
 
     let props = $props();
     
 
     if (props.img === 'musculacao'){
         props.img = musculacao
+    }else{
+        if (props.img === 'grupo'){
+        props.img = grupo
+        }
     }
 
     if (props.icon === 'muscle'){
         props.icon = EmojiMusc
+    }else if(props.icon=="peso"){
+        props.icon = peso
     }
 </script>
 
@@ -19,7 +27,9 @@
 <div class="intro__wrapper wrap">
     <h1>{props.title} <img src="{props.icon}" alt=""></h1>
     <p> {props.content}</p>
+    {#if props.btn && props.href}
     <a href="{props.href}" class="btn">{props.btn}</a>
+    {/if}
 </div>
 
 </section>
