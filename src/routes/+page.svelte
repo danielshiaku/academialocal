@@ -1,48 +1,13 @@
 <script>
-    import ImgHome from '$lib/assets/musculacao.jpg'
+    import Intro from '$lib/Intro.svelte';
+    import EmojiMusc from '$lib/assets/icon-muscle.png';
 </script>
 
-
-<section class="intro" style="background-image: url({ImgHome});">
-
-<div class="intro__wrapper wrap">
-    <h1>Você está pronto para o desafio? </h1>
-    <p> Academia Local está pronta para te ajudar a chegar mais longe e alcançar sua melhor performance.</p>
-    <a href="" class="btn">Modalidades</a>
-</div>
-    
-</section>
-
-<style>
-    .intro{
-        min-height: 360px;
-        min-width: 1000px;
-        background-size: cover;
-        background-position: center;
-        justify-content: start;
-        display: grid;
-        align-content: center;
-        position: relative;
-    }
-
-    .intro::after{
-        content:"";
-        background-color: rgba(0,0,0,0.55);
-        position: absolute;
-        inset: 0;
-    }
-
-    .intro__wrapper{
-        z-index: 1;
-        max-width: 450px;
-        line-height: 1.2;
-    }
-
-    p{
-        font-size: 18px;
-    }
-
-    h1{
-        font-size: 36px;
-    }
-</style>
+<Intro
+title="Você está pronto para o desafio?"
+content="Academia Local está pronta para te ajudar a chegar mais longe e alcançar sua melhor performance."
+icon="muscle"
+img = "musculacao"
+href = ""
+btn = "Sobre"
+/>

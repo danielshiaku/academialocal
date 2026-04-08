@@ -1,0 +1,65 @@
+<script>
+    import musculacao from '$lib/assets/musculacao.jpg';
+    import EmojiMusc from '$lib/assets/icon-muscle.png';
+
+    let props = $props();
+    
+
+    if (props.img === 'musculacao'){
+        props.img = musculacao
+    }
+
+    if (props.icon === 'muscle'){
+        props.icon = EmojiMusc
+    }
+</script>
+
+<section class="intro" style="background-image: url({props.img});">
+
+<div class="intro__wrapper wrap">
+    <h1>{props.title} <img src="{props.icon}" alt=""></h1>
+    <p> {props.content}</p>
+    <a href="{props.href}" class="btn">{props.btn}</a>
+</div>
+
+</section>
+
+<style>
+    .intro{
+        min-height: 360px;
+        min-width: 1000px;
+        background-size: cover;
+        background-position: center;
+        justify-content: start;
+        display: grid;
+        align-content: center;
+        position: relative;
+    }
+
+    .intro::after{
+        content:"";
+        background-color: rgba(0,0,0,0.55);
+        position: absolute;
+        inset: 0;
+    }
+
+    .intro__wrapper{
+        z-index: 1;
+        max-width: 450px;
+        line-height: 1.2;
+    }
+
+    p{
+        font-size: 18px;
+        margin-top: 16px;   
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    img{
+        display: inline;
+        max-width: 36px;
+    }
+</style>
