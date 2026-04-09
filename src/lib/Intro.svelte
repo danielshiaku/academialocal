@@ -3,6 +3,7 @@
     import EmojiMusc from '$lib/assets/icon-muscle.png';
     import grupo from '$lib/assets/exercicios-grupo.jpg';
     import peso from '$lib/assets/icon-weight.png'
+    import Header from '$lib/Header.svelte';
 
     let props = $props();
     
@@ -22,6 +23,7 @@
     }
 </script>
 
+<Header/>
 <section class="intro" style="background-image: url({props.img});">
 
 <div class="intro__wrapper wrap">
@@ -37,7 +39,6 @@
 <style>
     .intro{
         min-height: 360px;
-        min-width: 1000px;
         background-size: cover;
         background-position: center;
         justify-content: start;

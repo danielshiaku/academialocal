@@ -20,7 +20,7 @@
         min-height: 428px;
         background-size: cover;
         padding: 40px;
-        display: inline-block;
+        display: block;
         align-content: center;
         position: relative;
     }
