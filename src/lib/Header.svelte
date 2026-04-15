@@ -3,35 +3,31 @@
 </script>
 
 <section class="header">
+<div class="header__wrapper wrap">
 <img src="{logo}" alt="" class="logo">
 
-<div class="nav">
-    <a href="" class="btn_nav">Sobre</a>
-    <a href="" class="btn_nav">Home</a>
-    <a href="" class="btn_nav">Modalidades</a>
+<nav>
+    <ul>
+        <li><a href="" class="btn_nav">Sobre</a></li>
+        <li><a href="" class="btn_nav">Home</a></li>
+        <li><a href="" class="btn_nav">Modalidades</a></li>
+        <li><a class="btn header__btn" href="">Contato</a></li>
+    </ul>   
+    
+</nav>
 </div>
-
-<div class="contato">
-    <a href="">Contato</a>
-</div>
-
 </section>
 
 <style>
-    .header{
+    .header__wrapper{
         display: flex;
-        min-width: 1000px;
-        min-height: 120px;
         align-items: center;
-        justify-content: start;
-        padding: 10px;
+        min-height: 120px;
     }
     .logo{  
         width: 277px;
-        height: 50px;
     }
-    .nav{
-        padding: 22 205;
+    nav{
         display: flex;
         gap: 24px;
         margin-left: auto;
@@ -40,21 +36,20 @@
     .btn_nav:hover{
         text-decoration: underline;
     }
-    .contato{
-        min-width: 74px;
-        min-height: 34px;
-        margin-right: 40px;
-        margin-left: 36px;
-        border: solid 1px;
+    .header__btn{
         border-color: red;
-        padding: 6px 12px;
-        border-radius: 4px;
         transition: 250ms;
+        margin-top: 0;
     }
 
-    .contato:hover{
+    .header__btn:hover{
         background-color: var(--feat);
         transition: 125ms;
     }
     
+    ul{
+        align-items: center;
+        display: flex;
+        gap: 24px;
+    }
 </style>    

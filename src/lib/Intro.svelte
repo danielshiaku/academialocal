@@ -39,6 +39,7 @@
 <style>
     .intro{
         min-height: 360px;
+        min-width: 1000px;
         background-size: cover;
         background-position: center;
         justify-content: start;

@@ -61,7 +61,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Cabin Variable', sans-serif;
   background-color: var(--bg);
-
+  margin: 0 auto;
+  padding: 0 20px;
+  background-size: cover;
 }
 
 /* 6. Improve media defaults */

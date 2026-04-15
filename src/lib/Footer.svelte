@@ -72,7 +72,7 @@
         margin-top: 24px;
     }
     .credits__wrapper{
-        padding: 24px 40px
+        padding: 24px;
     }
     .credits::before{
         content: "";
@@ -83,7 +83,6 @@
     }
     span{
         color: var(--white);
-        font-size: 14px;
     }
     .credits{
         margin-top: 30px;
