@@ -1,4 +1,5 @@
 <script>
+    import Credits from '$lib/Credits.svelte';
     import Footer from '$lib/Footer.svelte';
     import Intro from '$lib/Intro.svelte';
 </script>
@@ -10,8 +11,12 @@ img = "musculacao"
 href = "sobre"
 btn = "Sobre"
 />
-<Footer
+<!--  
+  <Footer
 img = "crossfit"
 title = "Venha fazer seu primeiro treino grátis"
 content = "Entre em contato via WhatsApp ou e-mail e fale com um treinador especialista da equipe."
 />
+<Credits/>
+  -->
+
