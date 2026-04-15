@@ -26,7 +26,7 @@
 </section>
 
 <div class="credits">
-    <div class="credit__wrapper">
+    <div class="credits__wrapper">
         <span> © Academia Local, 2023</span>    
     </div>
 </div>        
@@ -71,8 +71,21 @@
         gap: 8px;
         margin-top: 24px;
     }
-    .credits_wrapper{
-        padding: 410px;
+    .credits__wrapper{
+        padding: 24px 40px
+    }
+    .credits::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255,255,255,0.2);
+    }
+    span{
+        color: var(--white);
+        font-size: 14px;
+    }
+    .credits{
         margin-top: 30px;
     }
 </style>

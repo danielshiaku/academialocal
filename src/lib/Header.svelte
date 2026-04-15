@@ -43,7 +43,8 @@
     .contato{
         min-width: 74px;
         min-height: 34px;
-        margin-left: 12px;
+        margin-right: 40px;
+        margin-left: 36px;
         border: solid 1px;
         border-color: red;
         padding: 6px 12px;
