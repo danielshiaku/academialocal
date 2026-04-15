@@ -6,7 +6,9 @@
 
 <section class="footer" >
     <div class="footer__wrapper wrap">
-        <img src="{imgfoot}" alt="" width="1920" height="1080">
+        <div class="footer__img">
+            <img src="{imgfoot}" alt="" width="1920" height="1080">
+        </div>
     
         <div class="footer__info">
             <h1>Venha fazer o seu <br> primeiro treino grátis</h1>
@@ -22,8 +24,13 @@
 
 
 </section>
-    <p> © Academia Local, 2023</p>
-        
+
+<div class="credits">
+    <div class="credit__wrapper">
+        <span> © Academia Local, 2023</span>    
+    </div>
+</div>        
+
 <style>
     .footer{
         margin-top: 90px;
@@ -33,11 +40,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        align-content: center;
         padding: 40px;
     }
 
-    .footer::after{
+    .footer__img::after{
         content: "";
         position: absolute;
         inset: 0;
@@ -46,13 +52,12 @@
 
     .footer__info{
         z-index: 1;
-        position: relative;
-        max-width: 450px;
+        align-content: center;
+        margin-left: 20px;
     }
     img{
         border-radius: 16px;
         height: auto;
-        width: 100%;
     }
     p{
         font-size: 18px;
@@ -60,11 +65,14 @@
     }
     h1{
         font-size: 36px;
-        min-width: 450px;
     }
     .footer__btn{
         display: flex;
         gap: 8px;
         margin-top: 24px;
+    }
+    .credits_wrapper{
+        padding: 410px;
+        margin-top: 30px;
     }
 </style>
