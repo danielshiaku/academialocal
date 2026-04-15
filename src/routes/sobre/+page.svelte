@@ -1,14 +1,13 @@
 <script>
     import Intro from "$lib/Intro.svelte";
+    import Footer from "$lib/Footer.svelte";
 </script>
 
 <Intro
-title="Você está pronto para o desafio?"
-content="Academia Local está pronta para te ajudar a chegar mais longe e alcançar sua melhor performance."
-icon="muscle"
-img = "musculacao"
-href = "sobre"
-btn = "Sobre"
+title="Conheça a academia que mais cresce na cidade!"
+content="Confira algumas das perguntas frequentes."
+icon="peso"
+img = "grupo"
 />
 <Footer
 img = "crossfit"

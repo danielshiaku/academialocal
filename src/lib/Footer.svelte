@@ -5,24 +5,36 @@
 </script>
 
 <section class="footer" >
-    <img src="{imgfoot}" alt="">
-
-    <div class="conteudo">
-        <h1>{props.title}</h1>
-        <p>{props.content}</p>
+    <div class="footer__wrapper wrap">
+        <img src="{imgfoot}" alt="" width="1920" height="1080">
+    
+        <div class="footer__info">
+            <h1>Venha fazer o seu <br> primeiro treino grátis</h1>
+            <p>Entre em contato via WhatsApp ou e-mail e <br> fale com um treinador especialista da equipe</p>
+            
+            <div class="footer__btn">
+                <a class="btn" href="">WhatsApp</a>
+                <a class="btn" href="">Email</a>
+            </div>
+    
+        </div>
     </div>
 
-</section>
 
+</section>
+    <p> © Academia Local, 2023</p>
+        
 <style>
     .footer{
-        min-width: 1000px;
-        min-height: 428px;
-        background-size: cover;
-        padding: 40px;
-        display: block;
-        align-content: center;
+        margin-top: 90px;
         position: relative;
+    }
+    .footer__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-content: center;
+        padding: 40px;
     }
 
     .footer::after{
@@ -32,12 +44,27 @@
         background-color: rgba(0,0,0,0.55);
     }
 
-    .conteudo{
+    .footer__info{
         z-index: 1;
         position: relative;
+        max-width: 450px;
     }
     img{
-        max-width: 450px;
-        max-height: 300px;
+        border-radius: 16px;
+        height: auto;
+        width: 100%;
+    }
+    p{
+        font-size: 18px;
+        margin-top: 16px;   
+    }
+    h1{
+        font-size: 36px;
+        min-width: 450px;
+    }
+    .footer__btn{
+        display: flex;
+        gap: 8px;
+        margin-top: 24px;
     }
 </style>

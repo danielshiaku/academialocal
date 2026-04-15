@@ -30,7 +30,7 @@
     <h1>{props.title} <img src="{props.icon}" alt=""></h1>
     <p> {props.content}</p>
     {#if props.btn && props.href}
-    <a href="{props.href}" class="btn">{props.btn}</a>
+    <a href="sobre" class="btn">{props.btn}</a>
     {/if}
 </div>
 
