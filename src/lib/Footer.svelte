@@ -36,10 +36,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        padding: 40px;
-        
+        padding: 40px; 
     }
 
+    .footer__img{
+        position: relative;
+    }
     .footer__img::after{
         content: "";
         position: absolute;
@@ -51,7 +53,6 @@
         z-index: 1;
         align-content: center;
         margin-left: 20px;
-        
     }
     img{
         border-radius: 16px;

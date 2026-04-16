@@ -4,14 +4,14 @@
 
 <section class="header">
 <div class="header__wrapper wrap">
-<img src="{logo}" alt="" class="logo">
+<a href="/"><img src="{logo}" alt="" class="logo"></a>
 
 <nav>
     <ul>
-        <li><a href="" class="btn_nav">Sobre</a></li>
-        <li><a href="" class="btn_nav">Home</a></li>
-        <li><a href="" class="btn_nav">Modalidades</a></li>
-        <li><a class="btn header__btn" href="">Contato</a></li>
+        <li><a href="sobre" class="btn_nav">Sobre</a></li>
+        <li><a href="/" class="btn_nav">Home</a></li>
+        <li><a href="/" class="btn_nav">Modalidades</a></li>
+        <li><a class="btn header__btn" href="/">Contato</a></li>
     </ul>   
     
 </nav>

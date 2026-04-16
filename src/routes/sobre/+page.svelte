@@ -14,14 +14,19 @@ img = "grupo"
 <div class="faq">
     <div class="faq__wrapper wrap">
         <Info
-        question="TESTE"
+        question="Quanto custa a mensalidade"
         answer = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies arcu eu vehicula pellentesque. Ut nec faucibus magna. Sed sed vestibulum diam. Aliquam tristique ante vitae diam ultrices, ut viverra libero consectetur."
         />
 
         <Info
-        question="TESTE"
+        question="Posso utilizar quantos dias na semana?"
         answer = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies arcu eu vehicula pellentesque. Ut nec faucibus magna. Sed sed vestibulum diam. Aliquam tristique ante vitae diam ultrices, ut viverra libero consectetur."
         />      
+
+        <Info
+        question="Quantas modalidades estão disponíveis?"
+        answer = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies arcu eu vehicula pellentesque. Ut nec faucibus magna. Sed sed vestibulum diam. Aliquam tristique ante vitae diam ultrices, ut viverra libero consectetur."
+        />
     </div>
 </div>
 
@@ -33,6 +38,8 @@ img = "grupo"
         display: inline-grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        min-width: 100%;
+
     }
         
     
