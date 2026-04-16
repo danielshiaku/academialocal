@@ -5,32 +5,32 @@
     import peso from '$lib/assets/icon-weight.png'
     import Header from '$lib/Header.svelte';
 
-    let props = $props();
+    let {img, icon, title, content, href, btn} = $props();
     
 
-    if (props.img === 'musculacao'){
-        props.img = musculacao
+    if (img === 'musculacao'){
+        img = musculacao
     }else{
-        if (props.img === 'grupo'){
-        props.img = grupo
+        if (img === 'grupo'){
+        img = grupo
         }
     }
 
-    if (props.icon === 'muscle'){
-        props.icon = EmojiMusc
-    }else if(props.icon=="peso"){
-        props.icon = peso
+    if (icon === 'muscle'){
+        icon = EmojiMusc
+    }else if(icon=="peso"){
+        icon = peso
     }
 </script>
 
 <Header/>
-<section class="intro" style="background-image: url({props.img});">
+<section class="intro" style="background-image: url({img});">
 
 <div class="intro__wrapper wrap">
-    <h1>{props.title} <img src="{props.icon}" alt=""></h1>
-    <p> {props.content}</p>
-    {#if props.btn && props.href}
-    <a href="sobre" class="btn">{props.btn}</a>
+    <h1>{title} <img src="{icon}" alt=""></h1>
+    <p> {content}</p>
+    {#if btn && href}
+    <a href="sobre" class="btn">{btn}</a>
     {/if}
 </div>
 

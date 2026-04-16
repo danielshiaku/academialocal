@@ -29,12 +29,15 @@
     .footer{
         margin-top: 90px;
         position: relative;
+        z-index: 1;
+        
     }
     .footer__wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         padding: 40px;
+        
     }
 
     .footer__img::after{
@@ -48,6 +51,7 @@
         z-index: 1;
         align-content: center;
         margin-left: 20px;
+        
     }
     img{
         border-radius: 16px;
