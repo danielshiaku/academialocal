@@ -20,7 +20,7 @@
     .single{
         z-index: 1;
         position: relative;
-        max-height: 360px;
+        min-height: 360px;
     }
 
     .single__wrapper{

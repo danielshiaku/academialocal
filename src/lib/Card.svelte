@@ -1,10 +1,9 @@
 <script>
     let { info } = $props()
-    import { page } from '$app/stores';
-    let archive = $page.route.id
+    import { page } from '$app/stores'
 </script>
 
-<a href="{archive}/{info.slug}" class="card">
+<a href="/modalidades/{info.slug}" class="card">
 <img src="{info.img}" alt="" width="120px" height="120px">
 <h2>{info.name}</h2>
 </a>

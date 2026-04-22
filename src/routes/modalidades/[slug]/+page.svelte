@@ -19,8 +19,9 @@ img = {data.img}
 />
 
 
-<section class="modalidades">
-    <div class="modalidades_wrapper wrap">
+<section class="list">
+    <h3>Outras modalidades:</h3>
+    <div class="related__wrapper wrap">
         {#each $modalidades as modalidade}
         <Card
             info = {modalidade}
@@ -30,7 +31,7 @@ img = {data.img}
 </section>
 
 <style>
-    .modalidades_wrapper{
+    .related__wrapper{
         margin-top: 60px;
         display: flex;
         flex-wrap: wrap;
