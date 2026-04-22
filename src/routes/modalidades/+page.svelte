@@ -21,3 +21,13 @@
         {/each}
     </div>
 </section>
+
+<style>
+    .modalidades_wrapper{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+</style>
