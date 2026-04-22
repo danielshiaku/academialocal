@@ -4,6 +4,7 @@
     import grupo from '$lib/assets/exercicios-grupo.jpg';
     import peso from '$lib/assets/icon-weight.png'
     import Header from '$lib/Header.svelte';
+    import alongamento from '$lib/assets/alongamento.jpg'
 
     let {img, icon, title, content, href, btn} = $props();
     
@@ -14,7 +15,10 @@
         if (img === 'grupo'){
         img = grupo
         }
-    }
+    else{
+        if (img === 'alongamento')
+        img = alongamento
+    }}
 
     if (icon === 'muscle'){
         icon = EmojiMusc
