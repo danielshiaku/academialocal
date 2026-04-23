@@ -13,11 +13,14 @@
 </script>
 
 <Header/>
+
+{#key data}
 <Single
 title = {data.name}
 content = {data.content}
 img = {data.img}
 />
+{/key}
 
 
 <div class="list">

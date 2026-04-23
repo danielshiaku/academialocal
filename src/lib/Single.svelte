@@ -1,4 +1,6 @@
 <script>
+    import { fly } from "svelte/transition";
+
     let { title, content, img } = $props()
 </script>
 
@@ -6,8 +8,8 @@
     <div class="single__wrapper wrap">
         
         <div class="single__texto">
-            <h1>{title}</h1>
-            <p>{content}</p>
+            <h1 in:fly = {{y:-12, duration:125, delay:125}}>{title}</h1>
+            <p in:fly = {{y:-12, duration:125, daley:250}}>{content}</p>
         </div>
     
         <div class="single__img">

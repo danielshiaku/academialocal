@@ -4,7 +4,7 @@
     let props = $props()
 </script>
 
-<section class="footer" >
+<section class="footer" id="contato">
     <div class="footer__wrapper wrap">
         <div class="footer__img">
             <img src="{imgfoot}" alt="" width="1920" height="1080">

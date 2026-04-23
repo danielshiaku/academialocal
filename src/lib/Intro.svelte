@@ -5,6 +5,7 @@
     import peso from '$lib/assets/icon-weight.png'
     import Header from '$lib/Header.svelte';
     import alongamento from '$lib/assets/alongamento.jpg'
+    import { fly } from 'svelte/transition'
 
     let {img, icon, title, content, href, btn} = $props();
     
@@ -31,10 +32,11 @@
 <section class="intro" style="background-image: url({img});">
 
 <div class="intro__wrapper wrap">
-    <h1>{title} <img src="{icon}" alt=""></h1>
-    <p> {content}</p>
+    <h1 in:fly = {{y:-12, duration:125, delay:125}}>{title} <img src="{icon}" alt="" ></h1>
+    <p in:fly = {{y:-12, duration:125, delay:250}}> {content}</p>
+    
     {#if btn && href}
-    <a href="sobre" class="btn">{btn}</a>
+    <a in:fly = {{y:-12,duration:125, delay:375}} href="sobre" class="btn">{btn}</a>
     {/if}
 </div>
 
