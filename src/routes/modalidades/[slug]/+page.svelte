@@ -5,7 +5,7 @@
     import Single from '$lib/Single.svelte';
     import { modalidades } from '$lib/stores'
     let modalidade = $page.params.slug
-
+    import autoAnimate from '@formkit/auto-animate';
 
     //let data = $modalidades.find(e => e.slug === modalidade)
     let { data } = $props()
@@ -20,16 +20,18 @@ img = {data.img}
 />
 
 
-<section class="list">
+<div class="list">
     <h3>Outras modalidades:</h3>
-    <div class="related__wrapper wrap">
-        {#each $modalidades as modalidade}
+    <div class="related__wrapper wrap" use:autoAnimate>
+        {#each $modalidades as info}
+        {#if info.slug != $page.params.slug}
         <Card
-            info = {modalidade}
+            info = {info}
         />
+        {/if}
         {/each}
     </div>
-</section>
+</div>
 
 <style>
     .related__wrapper{

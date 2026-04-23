@@ -68,6 +68,10 @@ body {
   width: 100%;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* 6. Improve media defaults */
 img, picture, video, canvas, svg {
   display: block;
