@@ -70,4 +70,10 @@
         gap: 8px;
         margin-top: 24px;
     }
+
+    @media (max-width: 800px){
+        .footer__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
 </style>

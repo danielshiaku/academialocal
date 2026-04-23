@@ -8,9 +8,9 @@
 
 <nav>
     <ul>
-        <li><a href="sobre" class="btn_nav">Sobre</a></li>
+        <li><a href="/sobre" class="btn_nav">Sobre</a></li>
         <li><a href="/" class="btn_nav">Home</a></li>
-        <li><a href="modalidades" class="btn_nav">Modalidades</a></li>
+        <li><a href="/modalidades" class="btn_nav">Modalidades</a></li>
         <li><a class="btn header__btn" href="/">Contato</a></li>
     </ul>   
     
@@ -51,5 +51,15 @@
         align-items: center;
         display: flex;
         gap: 24px;
+    }
+
+    @media(max-width: 800px){
+        .header__wrapper{
+            flex-direction: column;
+            justify-content: center;
+        }
+        nav{
+            margin-left: unset;
+        }
     }
 </style>    

@@ -42,5 +42,10 @@ img = "grupo"
 
     }
         
+    @media(max-width: 800px){
+        .faq__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
     
 </style>

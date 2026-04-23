@@ -50,4 +50,19 @@
         height: 360px;
         object-fit: cover;
     }
+
+    @media(max-width: 800px){
+        .single__wrapper{
+            grid-template-columns: 1fr;
+        }
+        .single__img{
+            grid-row: 1;
+            margin-left: -20px;
+        }
+        img{
+            height: 340px;
+            width: 100%;
+            object-position: center;
+        }
+    }
 </style>

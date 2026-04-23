@@ -32,4 +32,11 @@
         border-color: #fff;
         transition: 250px;
     }
+
+
+    @media(max-width: 800px){
+        .card{
+            flex-basis: 100%;
+        }
+    }
 </style>
