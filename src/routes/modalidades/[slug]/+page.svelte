@@ -7,7 +7,8 @@
     let modalidade = $page.params.slug
 
 
-    let data = $modalidades.find(e => e.slug === modalidade)
+    //let data = $modalidades.find(e => e.slug === modalidade)
+    let { data } = $props()
     console.log(data)
 </script>
 
