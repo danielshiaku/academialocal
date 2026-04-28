@@ -1,10 +1,15 @@
 <script>
     import Card from "$lib/Card.svelte";
     import Intro from "$lib/Intro.svelte";
+    import Seo from "$lib/Seo.svelte";
     import { modalidades } from "$lib/stores";
 
-    //console.log($modalidades)
 </script>
+
+<Seo
+name = "Modalidades"
+description = "A academia local tem várias modalidades"
+/>
 <Intro
     title = "Temos a modalidade certa para você ️"
     content = "Descubra as diversas modalidades da nossa academia."

@@ -2,8 +2,14 @@
     import Intro from "$lib/Intro.svelte";
     import Footer from "$lib/Footer.svelte";
     import Info from "$lib/Info.svelte";
+    import Seo from "$lib/Seo.svelte";
 </script>
 
+
+<Seo
+name = Sobre
+description = "Academia pertinho de você!"
+/>
 <Intro
 title="Conheça a academia que mais cresce na cidade!"
 content="Confira algumas das perguntas frequentes."
