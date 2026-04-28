@@ -10,8 +10,8 @@
 
 <nav>
     <ul>
-        <li><a href="/sobre" class="btn_nav" class:active={current=='/sobre'}>Sobre</a></li>
         <li><a href="/" class="btn_nav" class:active={current=='/'}>Home</a></li>
+        <li><a href="/sobre" class="btn_nav" class:active={current=='/sobre'}>Sobre</a></li>
         <li><a href="/modalidades" class="btn_nav" class:active={current=='/modalidades' || current == '/modalidades/[slug]'}>Modalidades</a></li>
         <li><a class="btn header__btn" href="#contato" >Contato</a></li>
     </ul>   

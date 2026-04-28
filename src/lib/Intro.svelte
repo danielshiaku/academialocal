@@ -1,10 +1,10 @@
 <script>
-    import musculacao from '$lib/assets/musculacao.jpg';
+    import musculacao from '$lib/assets/exercicios-grupo.avif';
     import EmojiMusc from '$lib/assets/icon-muscle.png';
-    import grupo from '$lib/assets/exercicios-grupo.jpg';
+    import grupo from '$lib/assets/exercicios-grupo.avif';
     import peso from '$lib/assets/icon-weight.png'
     import Header from '$lib/Header.svelte';
-    import alongamento from '$lib/assets/alongamento.jpg'
+    import alongamento from '$lib/assets/alongamento.avif'
     import { fly } from 'svelte/transition'
 
     let {img, icon, title, content, href, btn} = $props();

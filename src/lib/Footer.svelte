@@ -1,5 +1,5 @@
 <script>
-    import imgfoot from '$lib/assets/crossfit.jpg'
+    import imgfoot from '$lib/assets/crossfit.avif'
 
     let props = $props()
 </script>
